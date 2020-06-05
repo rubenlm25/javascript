@@ -13,5 +13,7 @@
     let whatever = "hello world!!!";
     alert(whatever);
     // your code here
+    let hello = "hello world!!";
+    alert(hello);
 
 })();

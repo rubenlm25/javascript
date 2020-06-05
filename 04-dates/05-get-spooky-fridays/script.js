@@ -10,7 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function(){
+        var year = document.getElementById("year").Value;
+        var month = 0;
+        const day = 13;
+        var inspectdate;
+        var i ;
+        var actualday;
+        alert("ok");
+        while(month<=11)
+        {
+            inspectdate = new Date(year,month,day)
+            actualday = inspectdate.getDay();
+            if(actualday == 5)
+            {
+                alert(inspectdate);
+            }
+            month ++;
+        }
 
+    })
     // your code here
 
 })();

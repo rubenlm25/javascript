@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    var number = 101;
+    while(number>100 || number < 0){
+        number = Number(prompt("choisis un chiffre de 0 a 100"))
+    }
+    if((number%3 == 0 && number%5==0)||(number%3 != 0 && number%5!=0)){
+        alert("fizzbuzz");
+    }
+    else if(number%3==0 && number%5!=0){
+        alert("fizz");
+    }
+    else{
+        alert("buzz");
+    }
+
+    
 
 })();

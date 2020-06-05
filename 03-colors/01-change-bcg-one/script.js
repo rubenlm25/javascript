@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
+    document.getElementById("red").style.backgroundColor ='red';
+    document.getElementById("green").style.backgroundColor = 'Green';
+    document.getElementById("yellow").style.backgroundColor = 'yellow';
+    document.getElementById("blue").style.backgroundColor = 'blue';
+
 
 })();

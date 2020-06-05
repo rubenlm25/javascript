@@ -9,12 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
         // your code here
-
+        number = 0;
+        while (number < 1 || number > 21) {
+            number=Number(prompt("choose a number between 1 - 21"));
+            if (number >= 1 && number <= 21) {
+                number = number * number;
+                alert(number);
+            }
+            else{
+                alert("not ok");
+            }
+        }
     });
 
 })();

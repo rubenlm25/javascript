@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
+(function () {
+    var r = 0;
+    while(r!=true){
+    let age = prompt("How old are you??");
+    let gender = prompt("male or female");
+    let city = prompt("Where do you live ? (city)");
+    r = confirm("age:"+age+"gender:"+gender+"city"+city+".");
+    } 
 
 })();

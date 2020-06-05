@@ -16,7 +16,16 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        // alert("ok"); 
+        var number = Number(document.getElementById("number").value);
+         var result = 1;
+         var i =1;
+         while (i<=number)
+         {
+             result=result*i;
+             i++
+         }
+         alert(result);
     });
 
 })();

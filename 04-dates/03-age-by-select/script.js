@@ -12,5 +12,34 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+        //date d'aujourd'hui
+        var today = new Date();
+        var currentday = today.getDay();
+        var currentmonth= today.getMonth();
+        var currentyear= today.getFullYear();
+        currentmonth++;
+        alert("le"+currentday+"/"+currentmonth+"/"+currentyear);
+        //date de naissance
+        var selector = document.getElementById("dob-day");
+        var birthday = selector[selector.selectedIndex].value;
+        selector = document.getElementById("dob-month");
+        var birthmonth = selector[selector.selectedIndex].value;
+        selector = document.getElementById("dob-year");
+        var birthyear = selector[selector.selectedIndex].value;
+        alert("le"+birthday+"/"+birthmonth+"/"+birthyear);
+        //calcul d'age
+        var result = currentyear - birthyear;
+        if(currentmonth<=birthmonth){
+            if(currentday<birthday){
+                result --;
+            }
+        }
+        alert(result);
+        
+
+
+        
+    });
 
 })();

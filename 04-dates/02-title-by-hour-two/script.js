@@ -14,5 +14,22 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    let sentence;
+    if(h<17){
+        sentence ="Hello";
+    }
+    else if(h>17){
+        sentence = "Good evening"
+    }
+    else if(m<=30){
+        sentence ="Hello";
+    }
+    else{
+        sentence = "Good evening"
+    }
+    document.getElementById("target").innerHTML = sentence;
 
 })();

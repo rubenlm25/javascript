@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
-  // your code here
+  let cake = prompt("Do you want a cake ?");
+    if (cake == "yes"){
+      alert("congratulation");
+    }
+    else{
+      alert("More cake for me");
+    }
 
 })();

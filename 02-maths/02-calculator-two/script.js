@@ -9,10 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function test() {
-    return true;
-}
+(() => {
+    // to get the value of an input: document.getElementById("element-id").value
 
-(function() {
-    return true;
+    const performOperation = operation => {
+        // perform the operation
+    };
+
+    Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
+        $btn.addEventListener(
+            "click",
+            () => (performOperation($btn.id), false),
+        ),
+    );
 })();
