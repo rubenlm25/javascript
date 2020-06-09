@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "apple",
@@ -27,5 +27,9 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        alert(fruits[3]);
+    });
+
 
 })();

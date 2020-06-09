@@ -27,5 +27,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+        var i;
+        for(i=0;i<11;i++)
+        {
+            console.log(fruits[i]);
+        }
+    });
 
 })();

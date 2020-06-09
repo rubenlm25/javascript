@@ -11,23 +11,22 @@
 
 (function() {
     document.getElementById("run").addEventListener("click", function(){
-        var year = document.getElementById("year").Value;
+        var year = document.getElementById("year").value;
         var month = 0;
         const day = 13;
         var inspectdate;
         var i ;
         var actualday;
-        alert("ok");
-        while(month<=11)
+        while(month<11)
         {
-            inspectdate = new Date(year,month,day)
+            inspectdate = new Date(year,month,day);
             actualday = inspectdate.getDay();
             if(actualday == 5)
             {
                 alert(inspectdate);
             }
             month ++;
-        }
+                }
 
     })
     // your code here
