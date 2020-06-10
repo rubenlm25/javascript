@@ -15,7 +15,7 @@
     document.getElementById("run").addEventListener("click",function(){
         //date d'aujourd'hui
         var today = new Date();
-        var currentday = today.getDay();
+        var currentday = today.getDate();
         var currentmonth= today.getMonth();
         var currentyear= today.getFullYear();
         currentmonth++;

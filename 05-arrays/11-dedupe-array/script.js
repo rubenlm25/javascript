@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "cerise",
@@ -29,5 +29,16 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        console.log(removeduplicata(fruits));
+    });
+    function removeduplicata(data){
+        let unique = [];
+        data.forEach(element => {
+            if(!unique.includes(element)){
+                unique.push(element);
+            }
+        });
+        return unique;
+    }
 })();

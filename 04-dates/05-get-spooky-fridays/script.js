@@ -15,7 +15,6 @@
         var month = 0;
         const day = 13;
         var inspectdate;
-        var i ;
         var actualday;
         while(month<11)
         {
