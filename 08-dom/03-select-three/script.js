@@ -12,6 +12,10 @@
 (function() {
 
     // your code here
-    document.querySelector(".material,.target").innerHTML = "Owned";
+    var errors = document.querySelectorAll(".target");
+
+[].forEach.call(errors, function(error) {
+error.innerHTML = "Owned";
+});
 
 })();

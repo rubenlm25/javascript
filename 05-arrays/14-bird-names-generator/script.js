@@ -41,9 +41,13 @@
     // your code here
     document.getElementById("run").addEventListener("click",function(){
         var randombird = birds[Math.floor(Math.random()*birds.length)];
-        var randomadj = adjectives.values[Math.floor(Math.random()*adjectives.length)];
+        var tableau = Array.from(adjectives);
+        var randomadj = tableau[Math.floor(Math.random()*tableau.length)];
         console.log(randombird);
         console.log(randomadj);
+        
+        
+        
         
     });
 })();
