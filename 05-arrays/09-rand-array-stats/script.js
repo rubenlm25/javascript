@@ -12,7 +12,16 @@
 (function () {
 
     // your code here
-    var number = [3, 45, 21, 4, 6, 2, 4, 6, 2, 67];
+    function randomnumber(min,max){
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min +1)) + min;
+    }
+    var number = [];
+    for (i=0;i<10;i++){
+        number[i] = randomnumber(0,100);
+    }
+
     document.getElementById("run").addEventListener("click", function () {
         var min = Math.min.apply(Math, number);
         var max = Math.max.apply(Math, number);

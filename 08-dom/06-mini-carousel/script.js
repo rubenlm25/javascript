@@ -20,5 +20,13 @@
     ];
 
     // your code here
+    var i = 1;
+    document.getElementById("next").addEventListener("click",function(){
+        document.querySelector("img").src = gallery[i];
+        i++;
+        if (i==5){
+            i=0;
+        }
+    })
 
 })();
