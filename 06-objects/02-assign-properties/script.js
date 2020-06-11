@@ -27,5 +27,18 @@
         user: null,
     };
     // your code here
-    
+    document.getElementById("run").addEventListener("click",function(){
+        for(var i = 0 ;i < computers.length;i++)
+        {
+            if(computers[i].available == null){
+                computers[i].available = defaultProps.available;
+            }
+            if(computers[i].os == null){
+                computers[i].os = defaultProps.os;
+            }
+        }
+        console.log(computers);
+        
+
+    });
 })();

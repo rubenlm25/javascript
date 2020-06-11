@@ -17,4 +17,10 @@
         }
     }
     // your code here
+    const cat1 = new Cat("skitty",9);
+    const cat2 = new Cat("Pixel",6);
+    console.log(cat1);
+    console.log(cat2);
+    
+    
 })();
