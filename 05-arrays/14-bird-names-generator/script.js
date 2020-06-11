@@ -43,8 +43,19 @@
         var randombird = birds[Math.floor(Math.random()*birds.length)];
         var tableau = Array.from(adjectives);
         var randomadj = tableau[Math.floor(Math.random()*tableau.length)];
-        console.log(randombird);
-        console.log(randomadj);
+
+        
+        if(randombird.fem === true)
+        {
+            var num = randomadj.length;
+            randomadj+="e";
+            console.log("la "+randomadj+" "+randombird.name);
+            document.getElementById("target").innerHTML = "la "+randomadj+" "+randombird.name;
+        }
+        else{
+            document.getElementById("target").innerHTML = "la "+randomadj+" "+randombird.name;
+            
+        }
         
         
         
