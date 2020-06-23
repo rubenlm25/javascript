@@ -23,10 +23,13 @@
         //date de naissance
         var selector = document.getElementById("dob-day");
         var birthday = selector[selector.selectedIndex].value;
+
         selector = document.getElementById("dob-month");
         var birthmonth = selector[selector.selectedIndex].value;
+
         selector = document.getElementById("dob-year");
         var birthyear = selector[selector.selectedIndex].value;
+        
         alert("le"+birthday+"/"+birthmonth+"/"+birthyear);
         //calcul d'age
         var result = currentyear - birthyear;

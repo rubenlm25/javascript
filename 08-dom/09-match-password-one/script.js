@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+        const password1 = document.getElementById("pass-one").value;
+        const password2 = document.getElementById("pass-two").value;
+            if(password1!=password2)
+            {
+                document.getElementById("pass-one").style.borderColor ='red';
+                document.getElementById("pass-two").style.borderColor='red';
+
+            }
+    });
 
 })();

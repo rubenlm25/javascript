@@ -12,5 +12,21 @@
 (function() {
 
     // your code here
+    var target = document.getElementById("target");
+    var table = document.createElement("table");
+    target.appendChild(table);
+    var i;
+    var j = 1;
+    for(i=1;i<=10;i++)
+    {
+        var newRow =table.insertRow();
+        while(j<=10)
+        {
+            var newCell = newRow.insertCell();
+            newCell.innerHTML = i*j;
+            j++;
+        }
+        j = 1;
+    }
 
 })();
